@@ -17,7 +17,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Chart from 'keen-react-chart';
 import KeenAnalysis from 'keen-analysis';
+
+import 'keen-dataviz/dist/keen-dataviz.css';
 import './styles/style.css';
+/*
+  Webpack users: to include CSS files in your project - install
+  https://github.com/webpack-contrib/css-loader
+  https://github.com/webpack-contrib/style-loader
+  Here's an example: https://github.com/keen/keen-dataviz-webpack-boilerplate
+*/
 
 class App extends React.Component {
   constructor(props) {
@@ -47,8 +55,9 @@ class App extends React.Component {
     const client = new KeenAnalysis({
       projectId: 'YOUR_PROJECT_ID',
       readKey: 'YOUR_READ_KEY'
-    })
-      .query({
+    });
+
+    client.query({
         analysis_type: 'funnel',
         steps: [
           {
@@ -85,9 +94,9 @@ class App extends React.Component {
           }
         ],
       })
-      .then((res) => {
+      .then((results) => {
         this.setState({
-          results: res,
+          results,
         });
       });
   }

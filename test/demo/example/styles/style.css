@@ -1,7 +1,13 @@
 #app {
-  padding: 20px;
-  width: 800px
+  margin: 2rem auto;
+  width: 800px;
+  height: 500px;
 }
-.c3-chart{
-  height: 300px;
+
+.keen-dataviz-rendering{
+  height:100%;
+}
+
+.keen-dataviz-rendering .c3-chart{
+  height:100%;
 }
