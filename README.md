@@ -8,7 +8,7 @@ npm install keen-react-chart --save
 
 ## Usage
 
-Use this component to create chart of data from Keen. Chart expects a results prop of the response from the query or a raw object. All the configurations can be passed by props.
+Use this component to create charts from the data received from the Keen's API. Charts expect a results prop of the response from the query or a raw object. All the configuration properties could be passed in props.
 
 ## Example
 
@@ -17,7 +17,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Chart from 'keen-react-chart';
 import KeenAnalysis from 'keen-analysis';
+
+import 'keen-dataviz/dist/keen-dataviz.css';
 import './styles/style.css';
+/*
+  Webpack users: to include CSS files in your project - install
+  https://github.com/webpack-contrib/css-loader
+  https://github.com/webpack-contrib/style-loader
+  Here's an example: https://github.com/keen/keen-dataviz-webpack-boilerplate
+*/
 
 class App extends React.Component {
   constructor(props) {
@@ -85,9 +93,9 @@ class App extends React.Component {
           }
         ],
       })
-      .then((res) => {
+      .then((results) => {
         this.setState({
-          results: res,
+          results,
         });
       });
   }
@@ -105,4 +113,4 @@ ReactDOM.render(<App />, document.getElementById('app'));
 
 ## Configuration
 
-Charts configurations You can check here: [keen-dataviz.js](https://github.com/keen/keen-dataviz.js/)
+Charts configurations you can check here: [keen-dataviz.js](https://github.com/keen/keen-dataviz.js/)

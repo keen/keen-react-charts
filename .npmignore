@@ -3,10 +3,10 @@
 .git*
 *.log
 *.md
-.awspublish-keen-js
 
 .babelrc
-test
+test/components
+setupTests.js
 .travis.yml
 jest.config.js
 webpack.config.js

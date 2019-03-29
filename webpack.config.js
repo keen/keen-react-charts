@@ -9,16 +9,12 @@ const entry = ( process.env.NODE_ENV === 'development' ) ? './test/demo/example/
 module.exports = {
   entry,
 
-  target: process.env.TARGET ? `${process.env.TARGET}` : 'web',
+  target: 'web',
 
   output: {
     path: extendedPath,
     filename: `${
-      process.env.TARGET ? `${process.env.TARGET}/` : ''
-    }${
       fileName
-    }${
-      process.env.OPTIMIZE_MINIMIZE ? '.min' : ''
     }.js`,
     library: `${!process.env.LIBRARY ? '' : process.env.LIBRARY}`,
     libraryTarget: 'umd',
@@ -71,7 +67,9 @@ module.exports = {
 
   devServer: {
     contentBase: path.join(__dirname, 'test/demo'),
-    publicPath: '/dist/',
+    publicPath: '/',
+    open: true,
+    watchContentBase: true,
   },
 
 };

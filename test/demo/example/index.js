@@ -2,6 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Chart from '../../../lib/Chart';
 import client from './analysis';
+
+/*
+  Webpack users: to include CSS files in your project - install
+  https://github.com/webpack-contrib/css-loader
+  https://github.com/webpack-contrib/style-loader
+  Here's an example: https://github.com/keen/keen-dataviz-webpack-boilerplate
+*/
+import 'keen-dataviz/dist/keen-dataviz.css';
 import './styles/style.css';
 
 class App extends React.Component {
@@ -26,6 +34,8 @@ class App extends React.Component {
       },
       renderOnVisible: true
     };
+
+    this.state.type = 'area';
   }
 
   componentDidMount() {
@@ -67,9 +77,9 @@ class App extends React.Component {
           }
         ],
       })
-      .then((res) => {
+      .then((results) => {
         this.setState({
-          results: res,
+          results: results,
         });
       });
   }
