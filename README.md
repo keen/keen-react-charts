@@ -3,7 +3,7 @@
 ## Install with NPM
 
 ```ssh
-npm install keen-react-chart --save
+npm install keen-react-charts --save
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ Use this component to create charts from the data received from the Keen's API. 
 ```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Chart from 'keen-react-chart';
+import Chart from 'keen-react-charts';
 import KeenAnalysis from 'keen-analysis';
 
 import 'keen-dataviz/dist/keen-dataviz.css';
