@@ -97,8 +97,5 @@
     "webpack-cli": "^3.1.1",
     "webpack-dev-server": "^3.1.1",
     "xhr-mock": "^2.3.2"
-  },
-  "jest": {
-    "setupTestFrameworkScriptFile": "<rootDir>/test/setupTests.js"
   }
 }

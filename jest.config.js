@@ -7,5 +7,5 @@ module.exports = {
   bail: true,
   testMatch: [files],
   testEnvironment: process.env.TEST_ENV || 'jsdom-c3',
-  transformIgnorePatterns: ["<rootDir>/node_modules/react"]
+  setupFilesAfterEnv: ["<rootDir>/test/setupTests.js"]
 };

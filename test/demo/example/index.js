@@ -33,9 +33,7 @@ class App extends React.Component {
         resultValues: false
       },
       renderOnVisible: true
-    };
-
-    this.state.type = 'area';
+    }
   }
 
   componentDidMount() {
