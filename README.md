@@ -20,12 +20,6 @@ import KeenAnalysis from 'keen-analysis';
 
 import 'keen-dataviz/dist/keen-dataviz.css';
 import './styles/style.css';
-/*
-  Webpack users: to include CSS files in your project - install
-  https://github.com/webpack-contrib/css-loader
-  https://github.com/webpack-contrib/style-loader
-  Here's an example: https://github.com/keen/keen-dataviz-webpack-boilerplate
-*/
 
 class App extends React.Component {
   constructor(props) {
