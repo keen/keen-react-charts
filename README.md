@@ -26,7 +26,6 @@ class App extends React.Component {
     super(props);
     this.state = {
       type: 'funnel',
-      title: 'Funnel Chart',
       title: 'Actions and purchases',
       labelMapping: {
         pageviews: 'Pageviews',
