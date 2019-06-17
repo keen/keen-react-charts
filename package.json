@@ -9,7 +9,7 @@
     "build": "NODE_ENV=production webpack -p",
     "preversion": "npm run test",
     "version": "npm run build && git add .",
-    "postversion": "git push && git push --tags",
+    "postversion": "git push && git push --tags && npm publish",
     "test": "NODE_ENV=test jest",
     "test:watch": "NODE_ENV=test jest --watch"
   },
