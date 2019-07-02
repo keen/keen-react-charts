@@ -2,7 +2,7 @@
   "name": "keen-react-charts",
   "description": "React component of Data Visualization SDK for Keen IO",
   "license": "MIT",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/main.js",
   "scripts": {
     "start": "concurrently --kill-others \"NODE_ENV=development webpack-dev-server\"",
