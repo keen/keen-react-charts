@@ -44,7 +44,7 @@
     "Funnels"
   ],
   "dependencies": {
-    "keen-dataviz": "^3.13.6",
+    "keen-dataviz": "^3.13.7",
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2"
