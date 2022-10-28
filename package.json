@@ -98,5 +98,9 @@
     "webpack-cli": "^3.1.1",
     "webpack-dev-server": "^3.1.1",
     "xhr-mock": "^2.3.2"
+  },
+  "peerDependencies": {
+    "react": "^16.4 || ^17.0 || ^18.0",
+    "react-dom": "^16.4 || ^17.0 || ^18.0"
   }
 }
